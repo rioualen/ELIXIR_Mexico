@@ -7,7 +7,7 @@ description: >-
   A sleek, minimal personal website for showcasing your work, writing,
   and everything in between.
 url: "https://rioualen.github.io"     # base hostname & protocol for your site
-baseurl: ""                                # subpath, e.g. "/repo-name" — leave "" for user/org pages
+baseurl: "/ELIXIR_Mexico"                                # subpath, e.g. "/repo-name" — leave "" for user/org pages
 
 author:
   name: "Your Name"
