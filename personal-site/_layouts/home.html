@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="single-column home">
+  <section class="intro">
+    {{ content }}
+  </section>
+
+  <section class="home-section">
+    <h2>Selected work</h2>
+    <ul class="item-list">
+      {% for item in site.portfolio limit:4 %}
+      <li>
+        <a href="{{ item.url | relative_url }}">
+          <span class="item-title">{{ item.title }}</span>
+          {% if item.summary %}<span class="item-summary">{{ item.summary }}</span>{% endif %}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <p><a href="{{ '/work/' | relative_url }}">See all work &rarr;</a></p>
+  </section>
+
+  <section class="home-section">
+    <h2>Latest writing</h2>
+    <ul class="item-list">
+      {% for post in site.posts limit:4 %}
+      <li>
+        <a href="{{ post.url | relative_url }}">
+          <span class="item-title">{{ post.title }}</span>
+          <span class="item-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <p><a href="{{ '/blog/' | relative_url }}">Read the blog &rarr;</a></p>
+  </section>
+</div>
