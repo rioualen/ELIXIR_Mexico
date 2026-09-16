@@ -6,7 +6,7 @@ tagline: "Developer · Designer · Creative"
 description: >-
   A sleek, minimal personal website for showcasing your work, writing,
   and everything in between.
-url: "https://yourusername.github.io"     # base hostname & protocol for your site
+url: "https://rioualen.github.io"     # base hostname & protocol for your site
 baseurl: ""                                # subpath, e.g. "/repo-name" — leave "" for user/org pages
 
 author:
